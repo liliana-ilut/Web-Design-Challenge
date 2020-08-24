@@ -33,7 +33,7 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item active" href="max_temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
               <a class="dropdown-item" href="humidity.html">Humidity</a>
               <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
               <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
@@ -55,13 +55,17 @@
     <div class="row">
       <div class="col-lg-7 col-md-12">
         <!-- Left box  -->
-        <div class="box" style="padding-bottom: 5px;">
-          <h3 class="title">Max Temperature</h3>
+        <div class="box">
+          <h3 class="title">Summary: Latitude vs. X</h3>
           <hr>
-          <img src= "Resources/Images/Plot_Lat_vs_Temp.png" alt="Max Temperature Plot">
-          <p>Looking at this plot we see that the temperatures get higher as they approach the equator. 
-             Since the data was extracted in July, we can observe the fact that this time of year Northern Hemisphere is warmer than the Southern Hemisphere. 
-             This is because during summer in the Northern Hemisphere, the North Pole tilts towards the Sun and the Southern Hemisphere receives less direct rays.</p>
+          <img src="Resources/Images/Plot_Lat_vs_Temp.png" class="vizualization rounded float-left" alt="Max Temperature Ployt">
+          <p>The purpose of the Weather project was to analyze what is the weather like as we approach the equator.
+               We were interested in 4 different weather factors: temperature, humidity, cloudiness and wind speed. </p>
+          <p>We did this by using a Python script that extracted over 500 cities across the world using the OpenWeatherMap API.
+               After cleaning the data set form all the empty values, we used Matplotlib to create a series of scatter plots to 
+               showcase the relationships between the latitude and the 4 weather factors we were interested in</p>
+           <p>This page provides the source data and the visualizations created on July 20th, 2020, as well as any correlation, 
+               trends and explications of the plots.</p>    
         </div>
       </div>
       <div class="col-lg-5 col-md-12">
@@ -75,12 +79,12 @@
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
                 <a href="max_temperature.html">
-                  <img class="panel active" src= "Resources/Images/Plot_Lat_vs_Temp.png" alt="Max Temperature Plot">
+                  <img class="panel" src="Resources/Images/Plot_Lat_vs_Temp.png" alt="Max Temperature Plot">
                 </a>
               </div>
               <div class="col-6">
                 <a href="humidity.html">
-                  <img class="panel" src= "Resources/Images/Plot_Lat_vs_Humidity.png" alt="Humidity Plot">
+                  <img class="panel" src="Resources/Images/Plot_Lat_vs_Humidity.png" alt="Humidity Plot">
                 </a>
               </div>
             </div>
