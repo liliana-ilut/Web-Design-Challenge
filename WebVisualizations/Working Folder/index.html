@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Bootstrap Visualization Dashboard</title>
+  <title>Weather API Analysis Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
@@ -40,7 +40,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="comparisons.html">Comparison</a>
+            <a class="nav-link" href="comparison.html">Comparison</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="data.html">Data</a>
@@ -59,12 +59,12 @@
           <h3 class="title">Summary: Latitude vs. X</h3>
           <hr>
           <img src="..//Resources/Images/Plot_Lat_vs_Temp.png" class="vizualization rounded float-left" alt="Max Temperature Graph">
-          <p>The purpose of the Latitude project was to analyze what is the weather like as we approach the equator. 
+          <p>The purpose of the Weather project was to analyze what is the weather like as we approach the equator. 
              We were interested in 4 different weather factors: temperature, humidity, cloudiness and wind speed. </p>
           <p>We did this by using a Python script that extracted over 500 cities across the world using the OpenWeatherMap API.
              After cleaning the data set form all the empty values, we used Matplotlib to create a series of scatter plots to showcase the relationships between the latitude and the 4 weather factors we were interested in. </p>
           <p>This page provides the source data and the visualizations created on July 20th, 2020, as well as any correlation, 
-            trends and explications of the plots.</p>
+            trends and explanations of each plot.</p>
         </div>
       </div>
       <div class="col-lg-5 col-md-12">
@@ -72,8 +72,6 @@
         <div class="box">
           <h5 class="title">Visualizations</h5>
           <hr>
-
-
           <div class="container">
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
